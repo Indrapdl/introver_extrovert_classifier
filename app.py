@@ -7,7 +7,7 @@ app = Flask(__name__)  # must exist at top-level
 # Load models
 with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
-with open("pca.pickle", "rb") as f:
+with open("pca.pkl", "rb") as f:
     pca = pickle.load(f)
 with open("logistic_regression_model.pkl", "rb") as f:
     model = pickle.load(f)
